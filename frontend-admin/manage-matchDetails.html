@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Match Details</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Manage Match Details</h1>
+        <button id="logoutBtn">Logout</button>
+    </header>
+
+    <main>
+        <!-- Match Overview & Statistics -->
+        <section id="match-container">
+            <h2>Match Overview & Statistics</h2>
+            <div id="match-info" class="match-card"></div>
+
+            <!-- Match Statistics Display -->
+            <div id="match-stats" class="match-stats"></div>
+
+            <!-- Editable Match Details Form -->
+            <form id="match-details-form">
+                <h3>Edit Match Statistics</h3>
+                <label>Ball Possession (%)</label>
+                <input type="text" id="ballPossession" required>
+
+                <label>Shots on Target</label>
+                <input type="text" id="shotsOnTarget" required>
+
+                <label>Corners</label>
+                <input type="text" id="corners" required>
+
+                <label>Fouls</label>
+                <input type="text" id="fouls" required>
+
+                <!-- Goal Details -->
+                <h3>Goal Details</h3>
+                <div id="goal-details"></div>
+                <button type="button" id="addGoalTeam1">➕ Add Goal - Team 1</button>
+                <button type="button" id="addGoalTeam2">➕ Add Goal - Team 2</button>
+
+                <!-- Video Highlights -->
+                <h3>Videos</h3>
+                <div id="video-details"></div>
+                <button type="button" id="addVideo">➕ Add Video</button>
+
+                <button type="submit">💾 Save Match Details</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="./js/manage-matchDetails.js"></script>
+</body>
+</html>

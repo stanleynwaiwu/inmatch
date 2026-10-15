@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Admin Dashboard</h1>
+    <nav>
+      <ul>
+        <li><a href="manage-admins.html" id="manageAdminsLink" style="display: none;">Manage Admins</a></li>
+        <li><a href="#" id="logoutBtn">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Welcome, <span id="adminName"></span></h2>
+      <p>This is your admin dashboard. Click below to manage leagues and proceed further.</p>
+    </section>
+
+    <!-- Stats Container for Super Admin -->
+    <section id="superAdminStats" class="stats-container" style="display: none;">
+      <div class="stat-card">
+        <h3>Total Admins</h3>
+        <p id="totalAdmins">0</p>
+      </div>
+    </section>
+
+    <!-- Action Box for Managing Leagues -->
+    <section class="dashboard-actions">
+      <div class="action-box">
+        <a href="manage-leagues.html">
+          <h3>Manage Leagues</h3>
+          <p>Click here to manage leagues, matches, and match details.</p>
+        </a>
+      </div>
+    </section>
+  </main>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

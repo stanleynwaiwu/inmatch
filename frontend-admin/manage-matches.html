@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Matches</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Manage Matches</h1>
+    <nav>
+      <ul>
+        <li><a href="manage-leagues.html">Back to Leagues</a></li>
+        <li><a href="#" id="logoutBtn">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Section for displaying the list of matches -->
+    <section id="matches-container">
+      <h2>Matches for League</h2>
+      <div id="matches-list">
+        <!-- Matches will be dynamically rendered here -->
+      </div>
+    </section>
+
+    <!-- Section for adding/editing matches -->
+    <section id="match-form-section">
+      <h2 id="form-title">Add New Match</h2>
+      <form id="match-form">
+        <div>
+          <label for="team1Name">Team 1 Name:</label>
+          <input type="text" id="team1Name" required>
+        </div>
+
+        <div>
+          <label for="team1Logo">Team 1 Logo URL:</label>
+          <input type="url" id="team1Logo" required>
+        </div>
+
+        <div>
+          <label for="team2Name">Team 2 Name:</label>
+          <input type="text" id="team2Name" required>
+        </div>
+
+        <div>
+          <label for="team2Logo">Team 2 Logo URL:</label>
+          <input type="url" id="team2Logo" required>
+        </div>
+
+        <div>
+          <label for="matchTime">Match Time:</label>
+          <input type="datetime-local" id="matchTime" required>
+        </div>
+
+        <div>
+          <label for="matchStatus">Match Status:</label>
+          <select id="matchStatus" required>
+            <!-- Options will be dynamically populated -->
+          </select>
+        </div>
+
+        <div>
+          <label for="scoreTeam1">Team 1 Score:</label>
+          <input type="number" id="scoreTeam1" min="0" value="0" required>
+        </div>
+
+        <div>
+          <label for="scoreTeam2">Team 2 Score:</label>
+          <input type="number" id="scoreTeam2" min="0" value="0" required>
+        </div>
+
+        <button type="submit" id="formSubmitBtn">Add Match</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Sports Management System</p>
+  </footer>
+
+  <script src="js/manage-matches.js"></script>
+</body>
+</html>

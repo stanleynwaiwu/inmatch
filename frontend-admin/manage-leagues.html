@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Leagues</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Manage Leagues</h1>
+    <nav>
+      <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="#" id="logoutBtn">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="leagues-container">
+      <h2>All Leagues</h2>
+      <div id="leagues-list">
+        <!-- Leagues will be dynamically rendered here -->
+      </div>
+    </section>
+
+    <section id="league-form-section">
+      <h2 id="form-title">Add New League</h2>
+      <form id="league-form">
+        <label for="leagueName">League Name:</label>
+        <input type="text" id="leagueName" required>
+        
+        <label for="leagueLogo">League Logo URL:</label>
+        <input type="url" id="leagueLogo" required>
+        
+        <button type="submit" id="formSubmitBtn">Add League</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="js/manage-leagues.js"></script>
+</body>
+</html>
